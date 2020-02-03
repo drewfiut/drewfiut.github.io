@@ -1,0 +1,16 @@
+/*.jumbotron{
+	background: url(Pinehurst-Studios-BG.png);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}*/
+
+img{
+	width: 15%;
+	height: auto;
+}
+
+iframe{
+	width: 100%;
+	height: 60vh;
+}

@@ -1,0 +1,9 @@
+#mail{
+	font-size: 1.9rem;
+}
+
+.jumbotron{
+	background: url(jumbo.jpg);
+	background-position: center;
+	background-size: cover;
+}
