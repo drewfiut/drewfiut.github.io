@@ -1,16 +1,12 @@
-var start = new Date(2019, 8, 25);
-start = start.getTime();
+document.querySelector("#progress").style.width = percentCompleted() + "%";
 
-var today = new Date();
-today = today.getTime() - start;
-
-var target = new Date(2024, 6, 1);
-target = target.getTime() - start;
-
-var percent = today / target;
-
-percent = percent * 100;
-
-console.log(percent);
-
-document.querySelector("#progress").style.width = percent.toString() + "%";
+function percentCompleted(){
+	var start = new Date(2019, 9, 2).getTime();
+	var today = new Date();
+	today = today.getTime() - start;
+	var target = new Date(2024, 6, 1);
+	target = target.getTime() - start;
+	var percent = today / target;
+	percent = percent * 100;
+	return percent.toString();
+}
