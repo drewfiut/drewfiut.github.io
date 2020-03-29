@@ -6,4 +6,17 @@
 	background: url(jumbo.jpg);
 	background-position: center;
 	background-size: cover;
+	margin: 0;
+}
+
+.bg-primary{
+	background-color: #4EB6B5!important;
+}
+
+.bg-dark{
+	background-color: #2E2E4D!important;
+}
+
+.btn-info{
+	background-color: #DD437B!important;
 }
