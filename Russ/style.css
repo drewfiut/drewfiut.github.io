@@ -18,11 +18,11 @@ a.anchor {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: orange;
+  color: #ff8800;
 }
 
 .nav-tabs a {
-  color: orange;
+  color: #ff8800;
   font-size: 1.5em;
 }
 
@@ -61,8 +61,8 @@ a.anchor {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 15%;
-  padding-right: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -71,24 +71,71 @@ a.anchor {
   color: white;
 }
 
+.home-head-text h1 {
+  font-size: 2.5rem !important;
+  margin-bottom: 10%;
+}
+
+.home-head-text p {
+  font-size: 1.3rem;
+}
+
 .home-head-text a {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 3%;
-  background-color: green;
+  padding: 3% !important;
+  background-color: #299b29;
   border: none;
   border-radius: 25px;
   color: white;
   text-decoration: none;
+  font-size: 1.7rem;
 }
 
-@media screen and (max-width: 500px) {
+.home-services .row {
+  width: 100%;
+  height: 70vh;
+  background-color: darkgray;
+  padding: 1% 7%;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.home-services .row .col-lg {
+  margin: 1%;
+  padding: 2% 0;
+  background-color: #343a40;
+}
+
+.home-services .row img {
+  margin-top: 4%;
+  width: 60%;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #ff8800;
+}
+
+@media screen and (max-width: 768px) {
+  .home-head-text {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .home-head {
     height: 50vh;
   }
   .home-head-text {
     padding: 0;
     width: 100%;
+  }
+  .home-head-text h1 {
+    font-size: 2.5rem !important;
   }
   .navbar {
     padding: .5rem 1rem;
