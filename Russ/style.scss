@@ -1,5 +1,19 @@
 $base-orange: rgb(255, 136, 0);
 
+@mixin gre-btn ($size, $padd){
+    padding: $padd!important;
+    background-color: rgb(41, 155, 41);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: $size;
+}
+
+.orange {
+    color: $base-orange;
+}
+
 .jumbotron {
     background: white!important;
 }
@@ -78,22 +92,17 @@ a.anchor {
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 3%;
-        padding: 3%!important;
-        background-color: rgb(41, 155, 41);
-        border: none;
-        border-radius: 25px;
-        color: white;
-        text-decoration: none;
-        font-size: 1.7rem;
+        @include gre-btn(1.7rem, 3%);
+        
     }
 }
 
 .home-services {
     .row {
         width: 100%;
-        height: 70vh;
+        height: auto;
         background-color: darkgray;
-        padding: 1% 7%;
+        padding: 2% 7%;
         margin: 0;
         text-align: center;
         color: white;
@@ -101,20 +110,53 @@ a.anchor {
         .col-lg {
             margin: 1%;
             padding: 2% 0;
+            padding-bottom: 4%;
+            height: auto;
             background-color: #343a40;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
         }
 
         img{
-            margin-top: 4%;
             width: 60%;
+        }
+
+        p{
+            padding: 3% 10%;
+        }
+
+        a {
+            @include gre-btn(1.4rem, 4%);
         }
     }
 }
 
 .footer {
     width: 100%;
-    height: 40vh;
+    height: auto;
+    padding: 5%;
+    padding-bottom: 0;
     background-color: $base-orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 100%;
+        }
+
+        .foot-btn {
+            text-align: center;
+            margin: 4%;
+            @include gre-btn(2.5rem, 3%); 
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -139,5 +181,11 @@ a.anchor {
 
     .navbar {
         padding: .5rem 1rem;
+    }
+
+    .footer {
+        img{
+            margin-top: 5%;
+        }
     }
 }

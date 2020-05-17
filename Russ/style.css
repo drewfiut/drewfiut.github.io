@@ -1,3 +1,7 @@
+.orange {
+  color: #ff8800;
+}
+
 .jumbotron {
   background: white !important;
 }
@@ -95,9 +99,9 @@ a.anchor {
 
 .home-services .row {
   width: 100%;
-  height: 70vh;
+  height: auto;
   background-color: darkgray;
-  padding: 1% 7%;
+  padding: 2% 7%;
   margin: 0;
   text-align: center;
   color: white;
@@ -106,18 +110,82 @@ a.anchor {
 .home-services .row .col-lg {
   margin: 1%;
   padding: 2% 0;
+  padding-bottom: 4%;
+  height: auto;
   background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-services .row img {
-  margin-top: 4%;
   width: 60%;
+}
+
+.home-services .row p {
+  padding: 3% 10%;
+}
+
+.home-services .row a {
+  padding: 4% !important;
+  background-color: #299b29;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .footer {
   width: 100%;
-  height: 40vh;
+  height: auto;
+  padding: 5%;
+  padding-bottom: 0;
   background-color: #ff8800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .row img {
+  width: 100%;
+}
+
+.footer .row .foot-btn {
+  text-align: center;
+  margin: 4%;
+  padding: 3% !important;
+  background-color: #299b29;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,6 +207,9 @@ a.anchor {
   }
   .navbar {
     padding: .5rem 1rem;
+  }
+  .footer img {
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
