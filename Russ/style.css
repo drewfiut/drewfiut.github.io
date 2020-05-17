@@ -208,6 +208,15 @@ a.anchor {
   .navbar {
     padding: .5rem 1rem;
   }
+  .home-services .row a {
+    padding: 5% !important;
+    background-color: #299b29;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
   .footer img {
     margin-top: 5%;
   }
